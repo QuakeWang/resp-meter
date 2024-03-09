@@ -1,0 +1,17 @@
+[package]
+name = "resp-meter"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+async-trait = "0.1.77"
+awaitgroup = "0.7"
+clap = { version = "4", features = ["derive"] }
+enum_dispatch = "0.3.12"
+num_cpus = "1.16.0"
+rand = {version = "0.8", features = []}
+redis = { version = "0.24.0", features = ["tokio-comp"] }
+serde = { version = "1", features = ["derive"] }
+tokio = { version = "1", features = ["full"] }
+toml = "0.8"
+zipf = "7"
